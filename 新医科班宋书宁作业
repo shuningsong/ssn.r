@@ -1,0 +1,213 @@
+#name:宋书宁
+#student id：2002070001
+#email：997864147@qq.com
+
+02课堂练习
+1:5 + 6:10
+c(1,3,6,10,15)+c(0,1,3,6,10)
+sum(1:5)
+median(1:5)
+mean(1:9)
+sum(1,2,3,4,5)
+median(1,2,3,4,5)
+mean(1,2,3,4,5)
+mean(2,2,3,4,5)
+c(2,3,5,7,11,13)-2
+-2:2*-2:2
+1:10/3
+abs(-9)
+abs(10)
+sqrt(9)
+log(10)
+log10(10)
+log(100,10)
+log10(100)
+1.23e5
+identical(2^3,2**3)
+pi
+sin(30)
+sin(1)
+sin(pi/6)
+sin(pi/2)
+cos(c(0,pi/4,pi/2,pi))
+round(3.1415926,3)
+round(3.1415926,4)
+floor(3.1415926)
+floor(3.55)
+ceiling(3.1415926)
+trunc(3.1415926)
+trunc(3.5415926)#??????????????????
+factorial(9)
+factorial(3)
+exp(pi*1i) + 1 
+factorial(7) + factorial(1) - 71 ^ 2
+choose(5, 0:5)
+choose(4, 0:4)
+choose(5, 0:4)
+c(3,4-1,1+1+1) == 3
+1:3 != 3:1
+exp(1:5)<100
+(1:5) ^ 2 >= 16
+sqrt(2)^2 == 2
+sqrt(2)^2 - 2
+all.equal(sqrt(2)^2 , 2)
+all.equal(sqrt(2)^2 , 3)
+isTRUE(all.equal(sqrt(2)^2 , 3))
+c( "Can", "you", "can", "a", "as", "can", "canner", "can?") == "can"
+c("A","B","C","D")<"C"
+c("a","b","c","d")<"C"
+x<-5:10
+y=2:7
+x+2*y-3
+x<-3
+x
+x <- 3
+x
+x < - 3
+x
+c(lnf+1,lnf-1,lnf-lnf)
+c(inf+1,inf-1,inf-inf)
+c(Inf+1,Inf-1,Inf-Inf)
+c(1/Inf,Inf/1,Inf/Inf)
+c(sqrt(Inf),sin(Inf))
+c(log(Inf),log(Inf,Inf))
+c(NA+1,NA*5,NA+Inf)
+c(NA+NA,NaN+NaN,NaN+NA,NA+NaN)
+x3<-c(0,Inf,-Inf,NaN,NA)
+is.finite(x3)#判断是否为有限值
+is.infinite(x3)
+is.nan(x3)#na是一个数
+is.na(x3)#nan&na均为缺失值
+x4<-1:10>=5
+!x4
+y4<-1:10%%2 == 0
+x4|y4
+x4&y4
+
+02作业
+#question1 %/%
+#question2 x == pi
+#question3 x <- ##  x<-##
+#question4 Inf, -Inf
+#question5 0,Inf, -Inf
+atan(1/1:1000)
+x <- 1:1000
+y <- atan(1/x)
+z <- 1/tan(y)
+x == z#有的true有的false
+identical(x,z)#false
+all.equal(x,z)#true
+true_and_missing <- c(TRUE)
+false_and_missing <- c(NA,FALSE)
+mixed <- c(TRUE,FALSE,NA)
+any(true_and_missing,false_and_missing,mixed)
+all(true_and_missing,false_and_missing,mixed)
+
+03课堂练习
+class(c(TRUE,FALSE))
+class(sqrt(1:10))
+class(3+1i)
+class(1)
+class(1L)
+class(0.5:4.5)
+class(1:5)
+class(c("she","he","the"))
+(gender <- factor(c("male","female","male","female")))
+levels(gender)
+nlevels(gender)
+as.integer(gender)
+gender_char <- sample(c("female","male"),10000,replace = TRUE)#replace = TRUE?????????????????????
+gender_fac <- as.factor(gender_char)
+object.size(gender_char)
+object.size(gender_fac)
+as.character(gender)
+is.character("red lorry,yellow lorry")
+is.logical(FALSE)
+is(gender,"factor")
+is.factor(gender)
+is.numeric(1)#对整数和浮点数都返回true
+is.numeric(1L)
+is.integer(1)#判断是否是整数
+is.integer(1L)
+is.double(1)#是否为倍浮点数
+is.double(1L)
+x <- "123.456"
+as(x,"numeric")
+as.numeric(x)
+y <- c(2,12,343,34997)
+as(y, "data.frame")
+as.data.frame(y)
+x <- "123.456"
+class(x) <- "numeric"
+is.numeric(x)
+y <- c(1,2,3,4,5,6,7)
+for(i in y)i
+for(i in y)print(i)
+num <- runif(30)
+summary(num)
+letters
+letters[1:5]
+LETTERS
+fac <- factor(sample(letters[1:5],30,replace = TRUE))
+summary(fac)
+bool <- sample(c(TRUE,FALSE,NA),30,replace = TRUE)
+summary(bool)
+attributes(fac)
+View(dfr)
+View(fac)
+peach <- 1
+plum <-"fruity"
+pear <- TRUE
+ls()
+ls(pattern = "ea")
+ls()
+ls.str()
+browseEnv()
+ls()
+rm(fac)
+ls()
+rm(list=ls())
+ls()
+
+03作业
+#question3-1 浮点值numeric 整数integer 复数complex
+#question3-2 nlevels
+#question3-3 as.numeric("6.283185")
+#question3-4 is.numeric() is.integer() is.double()
+#question3-5 rm(list = ls())
+
+class(Inf)#类
+class(NA)
+class(NaN)
+class("")
+typeof(Inf)#类型
+typeof(NA)
+typeof(NaN)
+typeof("")
+mode(Inf)#模式
+mode(NA)
+mode(NaN)
+mode("")
+storage.mode(Inf)#存储模式
+storage.mode(NA)
+storage.mode(NaN)
+storage.mode("")
+#第二题
+petname <- factor(c("dog","cat","godfish","hamster"))
+sample(c("dog","cat","godfish","hamster"),1000,replace = TRUE)#使用sample函数对字符串"dog","cat","godfish","hamster"随机采样1000次并使用replace选项
+petname_char <- sample(c("dog","cat","godfish","hamster"),1000,replace = TRUE)
+head(petname_char,10)#显示所得变量得前几个值
+sum(petname_char == "dog")#计算每种宠物的数量
+sum(petname_char == "cat")
+sum(petname_char == "godfish")
+sum(petname_char == "hamster")
+#第三题
+potato <- 1#创建以蔬菜命名的变量
+tomato <- 2
+carrot <- 3
+pumpkin <- 4
+soy <- 5
+cucumber <- 6
+pea <- 7
+broccoli <- 8
+ls(pattern = "a")#列出工作区中所有包含字母"a"的变量
