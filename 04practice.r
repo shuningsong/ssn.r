@@ -181,10 +181,7 @@ m %*% inverse_of_m
 #课堂作业
 #question4-1  seq.int(0,1,0.25)
 #question4-2  1、直接命名：c("name"=xxx)  2、用name(x)函数
-#question4-3  1、正数：返回此位置上的向量元素
-             #2、负数：返回除这个位置以外的所有向量
-             #3、逻辑向量：返回true元素
-             #4、名字：返回包含名字的向量
+#question4-3  正整数，副整数，逻辑值，字符
 #question4-4  60
 #question4-5  %*%
 
