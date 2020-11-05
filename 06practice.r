@@ -76,3 +76,15 @@ multiples_of_pi$three_pi
 get("four_pi",multiples_of_pi)
 ls(envir = multiples_of_pi)
 ls.str(envir = multiples_of_pi)
+
+#practice2
+parity <- function(x){
+}   #不会使用if     
+        
+#practice3
+function_11 <- function(n){
+  list("arge" = args(n),"body" = body(n))
+}
+function_22 <- function(x,y)x+y
+function_11(function_22)
+do.call(function_11,list(function_22))
