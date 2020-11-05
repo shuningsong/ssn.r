@@ -58,8 +58,8 @@ replicate(10,h2(9))
 
 #question6-1 全局变量
 #question6-2 利用list2env函数
-#question6-3 
-#question6-4
+#question6-3 利用body函数
+#question6-4 args函数，formalargs函数，body函数
 #question6-5 1、把函数当成参数 2、与rbind函数合用拼接数据框或矩阵 3、匿名方式传递函数
 
 #practic1
