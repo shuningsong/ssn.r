@@ -79,7 +79,12 @@ ls.str(envir = multiples_of_pi)
 
 #practice2
 parity <- function(x){
-}   #不会使用if     
+  ifelse(x%%2 == 0,T,F)
+}
+parity(2)
+parity(-1)
+parity(0)
+parity(NaN)   
         
 #practice3
 function_11 <- function(n){
